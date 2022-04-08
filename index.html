@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Unnamed GameWeb News</title>
+	
+	<style class="css">
+		/* only for testing the layout and effects, please name it as css file and link to the html file (here)*/
+
+		
+/*
+		* {
+			box-sizing: border-box;
+		}  
+*/
+
+
+		#auto {
+			margin: auto;
+		}
+
+		#right {
+			margin-right: 10%
+		}
+
+		#left {
+			margin-left: 10%;
+		}
+
+		.nav {
+			float: left;
+			padding: 20px;
+			width: 50%;
+			height: 300px;
+			/*			 only for demonstration, should be removed */
+			border: 3px groove #000;
+			background: #ccc;
+
+		}
+
+		.intro {
+			float: right;
+			padding: 10px;
+			/*important*/
+			width: 30%;
+			background-color: #f1f1f1;
+			height: 300px;
+			/*			 only for demonstration, should be removed */
+			border: 3px groove #000;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+			float: middle;
+			width: 70%;
+			padding: 10px;
+			/*important*/
+			height: 300px;
+			/* Should be removed. Only for demonstration */
+		}
+
+		.header {
+			width: 100%;
+			padding: 6px;
+			height: 80px;
+			padding: 10px;
+			background-color: black;
+			color: white;
+
+			/* Should be removed. Only for demonstration */
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.menu_bar {
+			width: 100%;
+			padding: 10px;
+			height: 170px;
+			background-color: #145E58;
+			color: white;
+		}
+
+/*
+		 Clear floats after the columns 
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+*/
+
+		a:hover {
+			color: deeppink;
+		}
+
+		.footer {
+			clear: both;
+			position: relative;
+			height: 40px;
+			margin-top: -200px;
+			padding: 40px;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+	<h1>Welcome to Unnamed GameWeb News!</h1>
+</div>
+
+<div class="menu_bar">
+	<p>Menu: </p>
+<ol>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="news.html">News</a></li>
+	<li><a href="blog.html">Blog</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+	<li><a href="signin.html">Sign up</a></li>
+</ol>
+</div>
+
+<div class="nav">
+	<h1>Current News:</h1>
+	<li><a href="">NEW1</a></li>
+	<li><a href="">NEW2</a></li>
+	<li><a href="">BLOG1</a></li>
+	<li><a href="">BLOG2</a></li>
+</div>
+<div class="intro">
+	<h1>About us:</h1>
+	<p>Some text about the Club and this website</p>
+</div>
+
+<div class="footer">
+	Made by Geronimo Operations Group<br>
+	Copyright by: Geronimo Operations Group
+</div>
+
+</body>
+</html>
