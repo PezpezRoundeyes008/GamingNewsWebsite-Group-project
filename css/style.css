@@ -1,0 +1,145 @@
+		/* only for testing the layout and effects, please name it as css file and link to the html file (here)*/
+
+/*
+		* {
+			box-sizing: border-box;
+		}  
+*/
+
+/*
+		#auto {
+			margin: auto;
+		}
+
+		#right {
+			margin-right: 10%
+		}
+
+		#left {
+			margin-left: 10%;
+		}
+*/
+
+		.header, .menu_bar, .nav, .intro, .footer {
+		  margin: 1px;
+		  padding: 15px;
+		}
+
+		.nav {
+			order: 3;
+			float: left;
+			padding: 15px;
+			width: 69%;
+			height: 300px;
+			/*			 only for demonstration, should be removed */
+			border: 3px groove #000;
+			background: #ccc;
+
+		}
+
+		.intro {
+			float: right;
+			padding: 10px;
+			/*important*/
+			width: 30%; /* 69 + 30 = 99*/
+			background-color: #f1f1f1;
+			height: 300px;
+			/*			 only for demonstration, should be removed */
+			border: 3px groove #000;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+			float: middle;
+			width: 70%;
+			padding: 10px;
+			/*important*/
+			height: 300px;
+			/* Should be removed. Only for demonstration */
+		}
+
+/*
+		.header {
+			width: 100%;
+			padding: 6px;
+			height: 80px;
+			padding: 10px;
+			background-color: black;
+			color: white;
+
+			 Should be removed. Only for demonstration 
+		}
+*/
+		.header {
+			order: 1;
+			width: 100%;
+			padding: 12px;
+			display: flex;
+			background-color: black;
+			color: white;
+		}
+
+/*
+		 Create two equal columns that floats next to each other 
+		.menu_bar {
+			width: 100%;
+			padding: 10px;
+			height: 170px;
+			background-color: #145E58;
+			color: white;
+		}
+*/
+
+		.menu_bar {
+			order: 2;
+			width: 100%;
+			color: white;
+			background-color: #145E58;
+			display: flex;
+			flex-direction: column;
+		}
+
+/*
+		 Clear floats after the columns 
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+*/
+
+		a:hover {
+			color: deeppink;
+		}
+
+/*
+		.footer {
+			clear: both;
+			position: relative;
+			height: 40px;
+			margin-top: -200px;
+			padding: 40px;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+*/
+		.footer {
+			order: 5;
+			clear: both;
+			position: relative;
+			height: 60px;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+
+
+				* {
+			box-sizing: border-box;
+		}
+		
+		
+		a:hover {
+			color: deeppink;
+		}
