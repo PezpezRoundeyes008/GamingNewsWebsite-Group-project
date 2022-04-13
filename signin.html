@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Sign In - Unnamed GameWeb News</title>
-	
-	<link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>Sign In - Unnamed GameWeb News</title>
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-<body>
-<div class="header">
-	<h1>Sign In</h1>
-</div>
 
-<nav>
-<ol class ="menu_bar_box">
-	<li class ="list_box"><a href="index.html">Home</a></li>
-	<li class ="list_box"><a href="news.html">News</a></li>
-	<li class ="list_box"><a href="blog.html">Blog</a></li>
-	<li class ="list_box"><a href="gallery.html">Gallery</a></li>
-</ol>
-</nav>
+  <body>
+    <div class="header">
+      <h1>Sign In</h1>
+    </div>
 
-<h1>Sign In</h1>
+    <div class="menu_bar">
+      <p>Menu: </p>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="signin.html">Sign up</a></li>
+      </ol>
+    </div>
 
-</body>
+    <h1>Sign In</h1>
+    <hr>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    
+    <p><label for="Question"><b>Question1</b></label></p>
+
+    <p><label for="rate"><b>Rate (1 - 5)</b></label></p>
+    <div>
+      <input type="radio" id="1" name="rate" value="1" checked> <label for="1">1</label> </div>
+    <div>
+      <input type="radio" id="2" name="rate" value="2" checked> <label for="2">2</label> </div>
+    <div>
+      <input type="radio" id="3" name="rate" value="3" checked> <label for="3">3</label> </div>
+    <div>
+      <input type="radio" id="4" name="rate" value="4" checked> <label for="4">4</label> </div>
+    <div>
+      <input type="radio" id="5" name="rate" value="5" checked> <label for="5">5</label> </div>
+
+    <p><textarea id="comment" name="comment" placeholder="Comment " style="height:200px"></textarea></p>
+    
+    
+    <input type="submit" value="Submit">
+    
+
+
+  </body>
 </html>
