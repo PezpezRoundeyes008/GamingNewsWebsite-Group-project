@@ -108,11 +108,25 @@
 
 
 		.main{
-			background-color: white;
-			border: 3px solid #020202;
+			background-color: #f0f0f0;
+			border: 3px solid #47413f;
 			border-radius: 5px;
-			padding: 35px 50px;
+			padding-top: 5px;
+			padding-right: 50px;
+			padding-bottom: 35px;
+			padding-left: 50px;
+			/* padding: 35px 50px; */
 			margin-bottom: 30px;
+		}
+		
+		/* trick: font colour */
+		.path_title{
+			font-size: 3.2rem;
+			text-decoration: underline;
+		}
+		.highlight{
+			color: #23bb90;
+			text-decoration: none;
 		}
 
 		.main h2 {
@@ -139,7 +153,6 @@
 		/* cover image size */
 		.content_thumbnail{
 			max-width: 55%;
-			display: block;
 		}
 
 		.img_content_slider{
@@ -165,7 +178,10 @@
 		}
 
 		p.Author_and_Date{
+			font-size: 15px;
+			padding-top: 18px;
 			text-align: right;
+			color: #4d4d4d;
 		}
 
 /* Other setting / class*/
