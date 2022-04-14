@@ -59,8 +59,8 @@
 		}
 
 		.list_box {
-			background-color: #4494BD;
-			border: 3px #4494BD solid;
+			background-color: #22af87;
+			border: 3px #22af87 solid;
 			text-align: center
 		}
 
@@ -118,10 +118,10 @@
 		.main h2 {
 			background-color: #808080;
 			color: #fff;
-			font-size: 2rem;
+			font-size: 2.2rem;
 			padding: 7px 20px;
 			margin: 10px 0px 20px;
-			border-radius: 1px;
+			border-radius: 5px;
 		}
 
 		.footer {
@@ -134,17 +134,39 @@
 			text-align: center;
 		}
 
-		a:hover {
-			color: deeppink;
+
+/* News / blog content layout */
+		/* cover image size */
+		.content_thumbnail{
+			max-width: 55%;
+			display: block;
 		}
 
-		.img_news_cover{
+		.img_content_slider{
 			max-width: 45%;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
 		}
+		/* Content text setting & size */
+		h3.subtitle, p.content_description{
+			text-align: left;
+		}
+		
+		.content_description{
+			column-count: 2;
+  			column-gap: 20px;
+  			column-rule: 8px groove #30dca9;
+		}
+		.subtitle{
+			color: #4d4d4d;
+			font-style: italic;
+			font-size: 1.5rem;
+		}
 
+		p.Author_and_Date{
+			text-align: right;
+		}
 
 /* Other setting / class*/
 		.GameWeb-logo {
