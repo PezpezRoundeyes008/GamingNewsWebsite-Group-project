@@ -10,6 +10,11 @@
 		  padding: 15px;
 		}
 
+		/* ~ nav, intro border line setting ~ */
+		.nav, .intro{
+			border: 3px groove #000;
+			border-radius: 5px;
+		}
 
 /* Header part*/
 		.header {
@@ -23,7 +28,12 @@
 			text-align: left;
 			border-radius: 4px;
 		}
-/* meun bar link to each pages */
+		
+		.header h1{
+			padding-left: 90px;
+		}
+
+/* Meun bar link to each pages */
 		.menu_bar {
 			order: 2;
 			width: 100%;
@@ -63,20 +73,28 @@
 		}
 
 /* Current News navbox */
-		.intro {
+		.nav {
 			order: 3;
-			padding: 10px;
+			float: left;
+			width: 69%;
+			height: 300px;
+			background: #b8c6cc;
+
+		}
+
+/* Introduction (About us) navbox */
+		.intro {
+			order: 4;
 			/*important*/
 			width: 30%; /* 69 + 30 = 99*/
 			background-color: #f1f1f1;
 			height: 300px;
 			/*			 only for demonstration, should be removed */
-			border: 3px groove #000;
 			overflow: scroll;
 		}
 
 		.intro h1 {
-			background-color: #808080;
+			background-color: #6a7579;
 			color: #fff;
 			font-size: 2rem;
 			padding: 7px 20px;
@@ -88,23 +106,10 @@
 			display: contents; /* TBC */
 		}
 
-/* Introduction (About us) navbox */
-		.nav {
-			order: 4;
-			float: left;
-			padding: 15px;
-			width: 69%;
-			height: 300px;
-			/*			 only for demonstration, should be removed */
-			border: 3px groove #000;
-			background: #ccc;
-
-		}
-
 
 		.main{
 			background-color: white;
-			border: 3px solid #a9a9a9;
+			border: 3px solid #020202;
 			border-radius: 5px;
 			padding: 35px 50px;
 			margin-bottom: 30px;
@@ -142,14 +147,37 @@
 
 
 /* Other setting / class*/
+		.GameWeb-logo {
+			width: 65px;
+			height: 65px;
+			float: left;
+		}
+
 
 		hr{
 			border-style: none;
-			border-top: 3px #000000 dashed;
+			border-top: 4px #000000 solid;
 			border-color: #4494BD;
 			margin: 35px 20px;
 		}
+		
+		/* header h1 a href setting:  none*/
+		.header a, .header a:hover, .header a:visited{
+			color: inherit;
+			text-decoration: none;
+		}
+		
+		/* default a href setting:  */
+		a, a:hover, a:visited{
+			text-decoration: none;
+		}
 
+		a:link{
+			color: #1a1a1a;
+		}
+		a:visited {
+			color: #5a247f;
+		}
 		a:hover {
 			color: deeppink;
 		}
