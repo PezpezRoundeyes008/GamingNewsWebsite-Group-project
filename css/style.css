@@ -89,7 +89,6 @@
 			width: 30%; /* 69 + 30 = 99*/
 			background-color: #f1f1f1;
 			height: 300px;
-			/*			 only for demonstration, should be removed */
 			overflow: scroll;
 		}
 
@@ -138,6 +137,20 @@
 			border-radius: 5px;
 		}
 
+		.main h2:hover, .archive:hover{
+			text-decoration: underline solid #5a5a5a;
+			text-decoration-thickness: 10%;
+		}
+		
+		.archive {
+			border: 4px solid #808080;
+			font-size: 2.2rem;
+			color: #808080;
+			border-radius: 5px;
+			padding: 7px 20px;
+			margin: 10px 0px 20px;
+		}
+
 		.footer {
 			order: 5;
 			clear: both;
@@ -150,9 +163,15 @@
 
 
 /* News / blog content layout */
-		/* cover image size */
-		.content_thumbnail{
+		/* article cover image size */
+		.article_thumbnail{
 			max-width: 55%;
+			/*  transition of hover*/
+			transition: 0.2s; 
+		}
+
+		.article_thumbnail:hover{
+			opacity: 0.6;
 		}
 
 		.img_content_slider{
@@ -168,7 +187,7 @@
 		
 		.content_description{
 			column-count: 2;
-  			column-gap: 20px;
+  			column-gap: 43px;
   			column-rule: 8px groove #30dca9;
 		}
 		.subtitle{
@@ -182,6 +201,29 @@
 			padding-top: 18px;
 			text-align: right;
 			color: #4d4d4d;
+		}
+
+/* Gallery setting */
+
+		figure{
+			padding: 0px 80px;
+			margin: 0px -20px;
+		}
+
+		figure img{
+			border-radius: 3px;
+			margin: 4px;
+			cursor: pointer;
+		}
+		/*  --- transition part  ---*/
+		.gallery_img img{
+			transition: 0.32s;
+		}
+
+		.gallery_img img:hover{
+			transform: scale(0.84) rotate(5deg);
+			/* opacity: 0.89; -- not use*/
+			box-shadow: 15px 40px 35px #8192a5;
 		}
 
 /* Other setting / class*/
@@ -219,3 +261,4 @@
 		a:hover {
 			color: deeppink;
 		}
+
