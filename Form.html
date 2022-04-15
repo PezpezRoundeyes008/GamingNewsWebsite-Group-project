@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Enter From - Unnamed GameWeb News</title>
-		  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>Enter From - Unnamed GameWeb News</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<div class="header">
+  <div class="header">
     <a href="index.html">
-    <img class="GameWeb-logo" src="image/GameWebLogo-white.png" alt="">
-    <h1>From</h1>
+      <img class="GameWeb-logo" src="image/GameWebLogo-white.png" alt="">
+      <h1>From</h1>
     </a>
-</div>
+  </div>
 
-<nav>
-	<ol class ="menu_bar_box">
-		<li class ="list_box"><a href="index.html">Home</a></li>
-		<li class ="list_box"><a href="news.html">News</a></li>
-		<li class ="list_box"><a href="blog.html">Blog</a></li>
-		<li class ="list_box"><a href="gallery.html">Gallery</a></li>
-		<li class ="list_box"><a href="form.html">Form</a></li>
-	</ol>
-</nav>
+  <nav>
+    <ol class="menu_bar_box">
+      <li class="list_box"><a href="index.html">Home</a></li>
+      <li class="list_box"><a href="news.html">News</a></li>
+      <li class="list_box"><a href="blog.html">Blog</a></li>
+      <li class="list_box"><a href="gallery.html">Gallery</a></li>
+      <li class="list_box"><a href="form.html">Form</a></li>
+    </ol>
+  </nav>
 
-<!-- Form area -->
-    <hr>
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter name" name="name" required>
+  <!-- Form area -->
+  <hr>
+  <label for="name"><b>Name</b></label>
+  <input type="text" placeholder="Enter name" name="name" required>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    
-    <p><label for="Question"><b>Question1</b></label></p>
+  <label for="email"><b>Email</b></label>
+  <input type="text" placeholder="Enter Email" name="email" required>
 
-    <p><label for="rate"><b>Rate (1 - 5)</b></label></p>
-    <div>
-      <input type="radio" id="1" name="rate" value="1" checked> <label for="1">1</label> </div>
-    <div>
-      <input type="radio" id="2" name="rate" value="2" checked> <label for="2">2</label> </div>
-    <div>
-      <input type="radio" id="3" name="rate" value="3" checked> <label for="3">3</label> </div>
-    <div>
-      <input type="radio" id="4" name="rate" value="4" checked> <label for="4">4</label> </div>
-    <div>
-      <input type="radio" id="5" name="rate" value="5" checked> <label for="5">5</label> </div>
+  <p><label for="Question"><b>Q1.Do you like video games? Why or why not?</b></label></p>
+  <input type="text" style="width:350px" name="Q1Answer" required>
 
-    <p><textarea id="comment" name="comment" placeholder="Comment " style="height:200px"></textarea></p>
-    
-    
-    <input type="submit" value="Submit">
+  <p><label for="Question"><b>Q2.Which one is the best gaming news on the website?</b></label></p>
+  <input type="text" style="width:350px" name="Q2Answer" required>
+
+  <p><label for="Question"><b>Q3.Did you like reading this article? Why or why not?</b></label></p>
+  <input type="text" style="width:350px" name="Q3Answer" required>
+
+  <p><label for="rate"><b>Rate (1 - 5)</b></label></p>
+  <div>
+    <input type="radio" id="1" name="rate" value="1" checked> <label for="1">1 Very Poor</label> </div>
+  <div>
+    <input type="radio" id="2" name="rate" value="2" checked> <label for="2">2 Poor</label> </div>
+  <div>
+    <input type="radio" id="3" name="rate" value="3" checked> <label for="3">3 Average</label> </div>
+  <div>
+    <input type="radio" id="4" name="rate" value="4" checked> <label for="4">4 Good</label> </div>
+  <div>
+    <input type="radio" id="5" name="rate" value="5" checked> <label for="5">5 Excellent</label> </div>
+
+  <p><textarea id="comment" name="comment" placeholder="Comment " style="height:200px"></textarea></p>
+
+
+  <input type="submit" value="Submit">
 </body>
 </html>
