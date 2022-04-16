@@ -5,69 +5,79 @@
   <meta charset="UTF-8">
   <title>Enter From - Unnamed GameWeb News</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/form.js"></script>
 </head>
 
 <body>
+  <form onSubmit="return chechFields()">
+    <div class="header">
+      <a href="index.html">
+        <img class="GameWeb-logo" src="image/GameWebLogo-white.png" alt="">
+        <h1>From</h1>
+      </a>
+    </div>
 
-  <div class="header">
-    <a href="index.html">
-      <img class="GameWeb-logo" src="image/GameWebLogo-white.png" alt="">
-      <h1>From</h1>
-    </a>
-  </div>
+    <nav>
+      <ol class="menu_bar_box">
+        <li class="list_box"><a href="index.html">Home</a></li>
+        <li class="list_box"><a href="news.html">News</a></li>
+        <li class="list_box"><a href="blog.html">Blog</a></li>
+        <li class="list_box"><a href="gallery.html">Gallery</a></li>
+        <li class="list_box"><a href="form.html">Form</a></li>
+      </ol>
+    </nav>
 
-  <nav>
-    <ol class="menu_bar_box">
-      <li class="list_box"><a href="index.html">Home</a></li>
-      <li class="list_box"><a href="news.html">News</a></li>
-      <li class="list_box"><a href="blog.html">Blog</a></li>
-      <li class="list_box"><a href="gallery.html">Gallery</a></li>
-      <li class="list_box"><a href="form.html">Form</a></li>
-    </ol>
-  </nav>
+    <div class="main">
+      <h1 class="path_title"><span class="highlight">✦</span> Form</h1>
 
-  <div class="main">
-    <h1 class="path_title"><span class="highlight">✦</span> Form</h1>
+      <hr>
+      <div class="form-group">
+        <label for="name"><b>Name</b></label>
+        <span class="text-red">*</span>
+        <input type="text" placeholder="Enter name" id="name" required>
+      </div>
 
-    <hr>
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter name" name="name" required>
+      <div class="form-group">
+        <label for="email"><b>Email</b></label>
+        <span class="text-red">*</span>
+        <input type="email" placeholder="Enter Email" id="email" required>
+      </div>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+      <div class="form-group">
+        <label for="Question"><b>Q1.Do you like video games? Why or why not?</b></label>
+        <span class="text-red">*</span>
+        <input type="text" style="width:350px" id="Q1Answer" required>
+      </div>
 
-    <p><label for="Question"><b>Q1.Do you like video games? Why or why not?</b></label></p>
-    <input type="text" style="width:350px" name="Q1Answer" required>
+      <div class="form-group">
+        <label for="Question"><b>Q2.Which one is the best gaming news on the website?</b></label>
+        <span class="text-red">*</span>
+        <input type="text" style="width:350px" id="Q2Answer" required>
+      </div>
 
-    <p><label for="Question"><b>Q2.Which one is the best gaming news on the website?</b></label></p>
-    <input type="text" style="width:350px" name="Q2Answer" required>
+      <div class="form-group">
+        <label for="Question"><b>Q3.Did you like reading this article? Why or why not?</b></label>
+        <span class="text-red">*</span>
+        <input type="text" style="width:350px" id="Q3Answer" required>
+      </div>
 
-    <p><label for="Question"><b>Q3.Did you like reading this article? Why or why not?</b></label></p>
-    <input type="text" style="width:350px" name="Q3Answer" required>
+      <div class="form-group">
+        <label for="rate"><b>Rate ☹️ - 😀</b></label>
+        <span class="text-red">*</span>
+        <input type="range" min="0" max="5" id="rate">
+      </div>
 
-    <p><label for="rate"><b>Rate (1 ☹️- 5 😀)</b></label></p>
-    <div>
-      <input type="radio" id="1" name="rate" value="1" checked> <label for="1">1 Very Bad ☹️</label> </div>
-    <div>
-      <input type="radio" id="2" name="rate" value="2" checked> <label for="2">2 Bad 🙁</label> </div>
-    <div>
-      <input type="radio" id="3" name="rate" value="3" checked> <label for="3">3 Average 😐</label> </div>
-    <div>
-      <input type="radio" id="4" name="rate" value="4" checked> <label for="4">4 Good 🙂</label> </div>
-    <div>
-      <input type="radio" id="5" name="rate" value="5" checked> <label for="5">5 Excellent 😀</label> </div>
+      <div class="form-group">
 
-    <p><textarea id="comment" name="comment" placeholder="Comment" style="height:200px"></textarea></p>
+        <textarea id="comment" name="comment" placeholder="Give a Comment" style="height:150px"></textarea>
+      </div>
 
-    <button onclick="submit()">Submit</button>
-    <script>
-      function submit() {
-        alert("success!");
-      }
+      <div class="form-group">
+        <input type="Submit" id="submit" value="Submit" required>
+        <input type="Reset" id="reset" value="Reset" required>
+      </div>
+    </div>
 
-    </script>
-
-  </div>
+  </form>
 </body>
-
 </html>
