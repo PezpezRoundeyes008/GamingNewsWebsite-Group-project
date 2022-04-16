@@ -318,3 +318,10 @@
 			height: auto;
 			position: relative;
 		}
+        .text-red {
+            color: #FF0000;
+        }
+
+        .form-group {
+            margin-top: 10px;
+        }
