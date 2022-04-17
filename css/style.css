@@ -328,6 +328,10 @@
 			float: left;
 		}
 
+		.GameWeb-logo:hover{
+			opacity: 0.85;
+		}
+
 		hr{
 			border-style: none;
 			border-top: 4px #000000 solid;
@@ -383,7 +387,47 @@
             margin-top: 10px;
         }
 
-
-		@media screen and (max-width: 300px) {
-			/* TBC */
+/* media query, apply following CSS code only when width is <= 800px under*/
+	@media screen and (max-width: 850px) {
+		
+		li{
+			width: 180px;
 		}
+
+		.current_article_plate{
+			width: 100%;
+			margin: 2px 0px;
+		}
+		.intro{
+			width: 100%;
+		}
+	}
+/* when screen width <= 600px */
+	@media screen and (max-width: 600px) {
+
+		.header h1{
+			/* hidden the header text */
+			visibility: hidden;
+		}
+
+		.img_content_slider{
+			max-width: 60%;
+		}
+
+		li{
+			width: 100%;
+			text-align: center;
+			margin: 2px 35px;
+			padding: 0px;
+		}
+
+		.current_article_plate{
+			width: 100%;
+			margin: 2px 0px;
+		}
+
+		.intro{
+			width: 100%;
+		}
+
+	}
