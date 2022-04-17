@@ -106,19 +106,34 @@
 			float: left;
 			border: 2px solid #838383;
 			border-radius: 4px;
-			margin: 1px 10px 0 1px;
+			margin: 10px 10px 0 10px;
 			padding: 2px;
+			/*  transition of hover*/
+			transition: 0.2s; 
+		}
+
+		.article_plate_thumbnail:hover{
+			opacity: 0.6;
 		}
 
 		.article_plate_title{
 			padding-bottom: 2px;
-			font-size: 23px;
+			font-size: 25px;
+			transition: 150ms; 
 		}
 
 		.article_plate_subtitles{
 			color:#3e3e3e;
+			font-size: 16px;
 			margin: 0 20px 0 20px;
 			margin-bottom: 20px;
+		}
+
+		p.article_plate_author_and_date{
+			font-size: 15px;
+			padding-right: 5px;
+			text-align: right;
+			color: #4d4d4d;
 		}
 
 /* Introduction (About us) navbox */
@@ -145,12 +160,38 @@
 			display: contents; /* TBC */
 		}
 
+		.intro_header{
+			font-size: 26px;
+			font-weight: bold;
+			line-height: 1;
+			text-shadow: 5px 3px 3px #8192a5;
+			padding: 8px 0 4px 0;
+		}
+
+		.intro_description p{
+			font-size: 19px;
+			line-height: 1;
+		}
+
+		em{
+			font-style: italic;
+		}
+
+		figcaption{
+			display: block;
+			text-align: center;
+			font-size: 90%;
+			font-weight: 300;
+			font-style: italic;
+			color: gray;
+		}
+
 		.intro_img{
 			margin: auto;
 			display: block;
 		}
 
-
+/* Main - contect displaying box */
 		.main{
 			background-color: #f0f0f0;
 			border: 3px solid #47413f;
@@ -201,10 +242,11 @@
 			order: 5;
 			clear: both;
 			position: relative;
-			height: 60px;
+			height: 95px;
 			background-color: black;
 			color: white;
 			text-align: center;
+			padding-top: 15px;
 		}
 
 
@@ -289,13 +331,22 @@
 
 		#article_plate{
 			margin: 14px 0 14px 0;
-			border-color: #1f2a5a;
+			border-top: 3px #1f2a5a solid;
 		}
 		
 		/* header h1 a href setting:  none*/
 		.header a, .header a:hover, .header a:visited{
 			color: inherit;
 			text-decoration: none;
+		}
+
+		.article_plate_title:hover{
+			color: #25b98d;
+			text-decoration: underline;
+		}
+
+		.article_list a:visited{
+			color: #380c2a;
 		}
 		
 		/* default a href setting:  */
@@ -307,7 +358,7 @@
 			color: #1a1a1a;
 		}
 		a:visited {
-			color: #5a247f;
+			color: inherit;
 		}
 		a:hover {
 			color: deeppink;
@@ -325,3 +376,8 @@
         .form-group {
             margin-top: 10px;
         }
+
+
+		@media screen and (max-width: 300px) {
+			/* TBC */
+		}
