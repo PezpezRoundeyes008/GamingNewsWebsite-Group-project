@@ -372,11 +372,15 @@
 			opacity: 0.85;
 		}
 
-		hr{
+		hr, .article_hr{
 			border-style: none;
 			border-top: 4px #000000 solid;
 			border-color: #4494BD;
 			margin: 35px 20px;
+		}
+
+		.article_hr{
+			margin: 10px 10px;
 		}
 
 		#article_plate{
