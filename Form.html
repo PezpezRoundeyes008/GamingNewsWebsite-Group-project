@@ -28,10 +28,11 @@
 
     <div class="main">
       <h1 class="path_title"><span class="highlight">✦</span> Form</h1>
-      <p>This new website is on testing. 
+      <p class="form_description">This new website is on testing. 
         We would like to know your thinking about our website. Please take your time to fill the form!</p>
       <!-- Form location -->
-      <form method="post">
+      <!-- ignore the return error, the window.location.assign is work. -->
+      <form onSubmit="return SumbitSuccessfulPage();"> 
             <div class="form-group">
               <label for="name"><b>Name</b></label>
               <span class="text-red">*</span>

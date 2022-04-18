@@ -161,7 +161,7 @@
 		}
 
 		.intro_description{ 
-			display: contents; /* TBC */
+			display: contents; 
 		}
 
 		.intro_header{
@@ -424,6 +424,14 @@
         .form-group {
             margin-top: 10px;
         }
+
+		.form_description{
+			background-color: #c0c0c0;
+			border: 3px groove #6e6e6e;
+			border-radius: 5px;
+			box-shadow: 5px 8px 15px 0px #8192a5;
+			padding: 3px;
+		}
 
 /* media query, apply following CSS code only when width is <= 800px under*/
 	@media screen and (max-width: 850px) {
