@@ -226,7 +226,7 @@
 			text-decoration: none;
 		}
 
-		.main h2, .gallery_header {
+		.main_h2, .gallery_header , .article_title{
 			background-color: #688179;
 			font-weight: bold;
 			color: #fff;
@@ -236,7 +236,7 @@
 			border-radius: 5px;
 		}
 
-		.main h2:hover{
+		.main_h2:hover{
 			text-decoration: underline solid #5a5a5a;
 			text-decoration-thickness: 10%;
 		}
@@ -280,7 +280,7 @@
 
 /* News / blog content layout */
 		/* article cover image size */
-		.article_thumbnail{
+		.article_thumbnail, .article_content_thumbnail{
 			max-width: 55%;
 			/*  transition of hover*/
 			transition: 0.2s; 
@@ -455,7 +455,7 @@
 			width: 100%;
 		}
 
-		.article_thumbnail{
+		.article_thumbnail, .article_content_thumbnail{
 			max-width: 90%;
 		}
 
@@ -498,7 +498,7 @@
 			font-size: 2.5rem;
 		}
 
-		.main h2{
+		.main_h2, .article_title{
 			font-size: 1.9rem;
 		}
 
